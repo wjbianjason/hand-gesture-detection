@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<!-- saved from url=(0084)http://webtecbasics.blogspot.jp/2014/06/how-to-install-skeltrack-on-ubuntu-1110.html -->
+<html class="v2 wf-consolas-i4-active wf-fontdinerswanky-n4-active wf-active" dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="./Web Tech Basic_ How to install skeltrack on ubuntu 11.10_files/cb=gapi.loaded_1" async=""></script><script src="./Web Tech Basic_ How to install skeltrack on ubuntu 11.10_files/cb=gapi.loaded_0" async=""></script><script src="./Web Tech Basic_ How to install skeltrack on ubuntu 11.10_files/webfont.js" type="text/javascript" async=""></script><script src="http://px.smowtion.com/validate?sid=164739" type="text/javascript"></script>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible">
+<meta content="width=1100" name="viewport">
+
+<script type="text/javascript">(function() { (function(){function c(a){this.t={};this.tick=function(a,c,b){var d=void 0!=b?b:(new Date).getTime();this.t[a]=[d,c];if(void 0==b)try{window.console.timeStamp("CSI/"+a)}catch(e){}};this.tick("start",null,a)}var a;window.performance&&(a=window.performance.timing);var h=a?new c(a.responseStart):new c;window.jstiming={Timer:c,load:h};if(a){var b=a.navigationStart,e=a.responseStart;0<b&&e>=b&&(window.jstiming.srt=e-b)}if(a){var d=window.jstiming.load;0<b&&e>=b&&(d.tick("_wtsrt",void 0,b),d.tick("wtsrt_",
+"_wtsrt",e),d.tick("tbsd_","wtsrt_"))}try{a=null,window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),d&&0<b&&(d.tick("_tbnd",void 0,window.chrome.csi().startE),d.tick("tbnd_","_tbnd",b))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,d&&0<b&&(d.tick("_tbnd",void 0,window.external.startE),d.tick("tbnd_","_tbnd",b))),a&&(window.jstiming.pt=a)}catch(k){}})();window.tickAboveFold=function(c){var a=0;if(c.offsetParent){do a+=c.offsetTop;while(c=c.offsetParent)}c=a;750>=c&&window.jstiming.load.tick("aft")};var f=!1;function g(){f||(f=!0,window.jstiming.load.tick("firstScrollTime"))}window.addEventListener?window.addEventListener("scroll",g,!1):window.attachEvent("onscroll",g);
+ })();</script>
+<meta content="blogger" name="generator">
+<link href="http://webtecbasics.blogspot.jp/favicon.ico" rel="icon" type="image/x-icon">
+<link href="http://webtecbasics.blogspot.com/2014/06/how-to-install-skeltrack-on-ubuntu-1110.html" rel="canonical">
+<link rel="alternate" type="application/atom+xml" title="Web Tech Basic - Atom" href="http://webtecbasics.blogspot.com/feeds/posts/default">
+<link rel="alternate" type="application/rss+xml" title="Web Tech Basic - RSS" href="http://webtecbasics.blogspot.com/feeds/posts/default?alt=rss">
+<link rel="service.post" type="application/atom+xml" title="Web Tech Basic - Atom" href="https://www.blogger.com/feeds/7146815791316761183/posts/default">
+
+<link rel="alternate" type="application/atom+xml" title="Web Tech Basic - Atom" href="http://webtecbasics.blogspot.com/feeds/2104366302166494675/comments/default">
+<!--[if IE]><script type="text/javascript" src="https://www.blogger.com/static/v1/jsbin/1944632664-ieretrofit.js"></script>
+<![endif]-->
+<meta content="How to install skeltrack on ubuntu 11.10" name="description">
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<title>Web Tech Basic: How to install skeltrack on ubuntu 11.10</title>
+<script type="text/javascript">
+WebFontConfig = {
+  google: { families: [ 'Fontdiner Swanky', 'Consolas:italic' ],
+  api: '//fonts.googleapis.com/css?kit=FmVpMACfytd9IgBmryvtuVKDHJA-kvFx86PIj8BTAMneiI2SGEsjHszg3fBpgyCG'
+  },
+  loading: function() {
+    if (window.jstiming) window.jstiming.load.tick('webfontLoading');
+  },
+  active: function() {
+    if (window.jstiming) window.jstiming.load.tick('webfontActive');
+  }
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = '//ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(wf, s);
+})();
+</script>
+<style type="text/css">
+.wf-inactive body, .wf-consolas-i4-loading body, .wf-consolas-i4-inactive body {
+  font-family: sans-serif;
+}
+.wf-inactive .header h1, .wf-fontdinerswanky-n4-loading .header h1, .wf-fontdinerswanky-n4-inactive .header h1 {
+  font-family: cursive;
+}
+.wf-inactive .tabs-inner .widget li a, .wf-consolas-i4-loading .tabs-inner .widget li a, .wf-consolas-i4-inactive .tabs-inner .widget li a {
+  font-family: sans-serif;
+}
+</style>
+<link type="text/css" rel="stylesheet" href="./Web Tech Basic_ How to install skeltrack on ubuntu 11.10_files/3375562265-css_bundle_v2.css">
+<link type="text/css" rel="stylesheet" href="./Web Tech Basic_ How to install skeltrack on ubuntu 11.10_files/authorization.css">
+<style id="page-skin-1" type="text/css"><!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Simple
+Designer: Josh Peterson
+URL:      www.noaesthetic.com
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="keycolor" description="Main Color" type="color" default="#66bbdd"/>
+<Group description="Page Text" selector="body">
+<Variable name="body.font" description="Font" type="font"
+default="normal normal 12px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="body.text.color" description="Text Color" type="color" default="#222222"/>
+</Group>
+<Group description="Backgrounds" selector=".body-fauxcolumns-outer">
+<Variable name="body.background.color" description="Outer Background" type="color" default="#66bbdd"/>
+<Variable name="content.background.color" description="Main Background" type="color" default="#ffffff"/>
+<Variable name="header.background.color" description="Header Background" type="color" default="transparent"/>
+</Group>
+<Group description="Links" selector=".main-outer">
+<Variable name="link.color" description="Link Color" type="color" default="#2288bb"/>
+<Variable name="link.visited.color" description="Visited Color" type="color" default="#888888"/>
+<Variable name="link.hover.color" description="Hover Color" type="color" default="#33aaff"/>
+</Group>
+<Group description="Blog Title" selector=".header h1">
+<Variable name="header.font" description="Font" type="font"
+default="normal normal 60px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="header.text.color" description="Title Color" type="color" default="#3399bb" />
+</Group>
+<Group description="Blog Description" selector=".header .description">
+<Variable name="description.text.color" description="Description Color" type="color"
+default="#777777" />
+</Group>
+<Group description="Tabs Text" selector=".tabs-inner .widget li a">
+<Variable name="tabs.font" description="Font" type="font"
+default="normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="tabs.text.color" description="Text Color" type="color" default="#999999"/>
+<Variable name="tabs.selected.text.color" description="Selected Color" type="color" default="#000000"/>
+</Group>
+<Group description="Tabs Background" selector=".tabs-outer .PageList">
+<Variable name="tabs.background.color" description="Background Color" type="color" default="#f5f5f5"/>
+<Variable name="tabs.selected.background.color" description="Selected Color" type="color" default="#eeeeee"/>
+</Group>
+<Group description="Post Title" selector="h3.post-title, .comments h4">
+<Variable name="post.title.font" description="Font" type="font"
+default="normal normal 22px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+</Group>
+<Group description="Date Header" selector=".date-header">
+<Variable name="date.header.color" description="Text Color" type="color"
+default="#444444"/>
+<Variable name="date.header.background.color" description="Background Color" type="color"
+default="transparent"/>
+<Variable name="date.header.font" description="Text Font" type="font"
+default="normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="date.header.padding" description="Date Header Padding" type="string" default="inherit"/>
+<Variable name="date.header.letterspacing" description="Date Header Letter Spacing" type="string" default="inherit"/>
+<Variable name="date.header.margin" description="Date Header Margin" type="string" default="inherit"/>
+</Group>
+<Group description="Post Footer" selector=".post-footer">
+<Variable name="post.footer.text.color" description="Text Color" type="color" default="#666666"/>
+<Variable name="post.footer.background.color" description="Background Color" type="color"
+default="#f9f9f9"/>
+<Variable name="post.footer.border.color" description="Shadow Color" type="color" default="#eeeeee"/>
+</Group>
+<Group description="Gadgets" selector="h2">
+<Variable name="widget.title.font" description="Title Font" type="font"
+default="normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="widget.title.text.color" description="Title Color" type="color" default="#000000"/>
+<Variable name="widget.alternate.text.color" description="Alternate Color" type="color" default="#999999"/>
+</Group>
+<Group description="Images" selector=".main-inner">
+<Variable name="image.background.color" description="Background Color" type="color" default="#ffffff"/>
+<Variable name="image.border.color" description="Border Color" type="color" default="#eeeeee"/>
+<Variable name="image.text.color" description="Caption Text Color" type="color" default="#444444"/>
+</Group>
+<Group description="Accents" selector=".content-inner">
+<Variable name="body.rule.color" description="Separator Line Color" type="color" default="#eeeeee"/>
+<Variable name="tabs.border.color" description="Tabs Border Color" type="color" default="transparent"/>
+</Group>
+<Variable name="body.background" description="Body Background" type="background"
+color="#ffffff" default="$(color) none repeat scroll top left"/>
+<Variable name="body.background.override" description="Body Background Override" type="string" default=""/>
+<Variable name="body.background.gradient.cap" description="Body Gradient Cap" type="url"
+default="url(//www.blogblog.com/1kt/simple/gradients_light.png)"/>
+<Variable name="body.background.gradient.tile" description="Body Gradient Tile" type="url"
+default="url(//www.blogblog.com/1kt/simple/body_gradient_tile_light.png)"/>
+<Variable name="content.background.color.selector" description="Content Background Color Selector" type="string" default=".content-inner"/>
+<Variable name="content.padding" description="Content Padding" type="length" default="10px" min="0" max="100px"/>
+<Variable name="content.padding.horizontal" description="Content Horizontal Padding" type="length" default="10px" min="0" max="100px"/>
+<Variable name="content.shadow.spread" description="Content Shadow Spread" type="length" default="40px" min="0" max="100px"/>
+<Variable name="content.shadow.spread.webkit" description="Content Shadow Spread (WebKit)" type="length" default="5px" min="0" max="100px"/>
+<Variable name="content.shadow.spread.ie" description="Content Shadow Spread (IE)" type="length" default="10px" min="0" max="100px"/>
+<Variable name="main.border.width" description="Main Border Width" type="length" default="0" min="0" max="10px"/>
+<Variable name="header.background.gradient" description="Header Gradient" type="url" default="none"/>
+<Variable name="header.shadow.offset.left" description="Header Shadow Offset Left" type="length" default="-1px" min="-50px" max="50px"/>
+<Variable name="header.shadow.offset.top" description="Header Shadow Offset Top" type="length" default="-1px" min="-50px" max="50px"/>
+<Variable name="header.shadow.spread" description="Header Shadow Spread" type="length" default="1px" min="0" max="100px"/>
+<Variable name="header.padding" description="Header Padding" type="length" default="30px" min="0" max="100px"/>
+<Variable name="header.border.size" description="Header Border Size" type="length" default="1px" min="0" max="10px"/>
+<Variable name="header.bottom.border.size" description="Header Bottom Border Size" type="length" default="1px" min="0" max="10px"/>
+<Variable name="header.border.horizontalsize" description="Header Horizontal Border Size" type="length" default="0" min="0" max="10px"/>
+<Variable name="description.text.size" description="Description Text Size" type="string" default="140%"/>
+<Variable name="tabs.margin.top" description="Tabs Margin Top" type="length" default="0" min="0" max="100px"/>
+<Variable name="tabs.margin.side" description="Tabs Side Margin" type="length" default="30px" min="0" max="100px"/>
+<Variable name="tabs.background.gradient" description="Tabs Background Gradient" type="url"
+default="url(//www.blogblog.com/1kt/simple/gradients_light.png)"/>
+<Variable name="tabs.border.width" description="Tabs Border Width" type="length" default="1px" min="0" max="10px"/>
+<Variable name="tabs.bevel.border.width" description="Tabs Bevel Border Width" type="length" default="1px" min="0" max="10px"/>
+<Variable name="post.margin.bottom" description="Post Bottom Margin" type="length" default="25px" min="0" max="100px"/>
+<Variable name="image.border.small.size" description="Image Border Small Size" type="length" default="2px" min="0" max="10px"/>
+<Variable name="image.border.large.size" description="Image Border Large Size" type="length" default="5px" min="0" max="10px"/>
+<Variable name="page.width.selector" description="Page Width Selector" type="string" default=".region-inner"/>
+<Variable name="page.width" description="Page Width" type="string" default="auto"/>
+<Variable name="main.section.margin" description="Main Section Margin" type="length" default="15px" min="0" max="100px"/>
+<Variable name="main.padding" description="Main Padding" type="length" default="15px" min="0" max="100px"/>
+<Variable name="main.padding.top" description="Main Padding Top" type="length" default="30px" min="0" max="100px"/>
+<Variable name="main.padding.bottom" description="Main Padding Bottom" type="length" default="30px" min="0" max="100px"/>
+<Variable name="paging.background"
+color="#ffffff"
+description="Background of blog paging area" type="background"
+default="transparent none no-repeat scroll top center"/>
+<Variable name="footer.bevel" description="Bevel border length of footer" type="length" default="0" min="0" max="10px"/>
+<Variable name="mobile.background.overlay" description="Mobile Background Overlay" type="string"
+default="transparent none repeat scroll top left"/>
+<Variable name="mobile.background.size" description="Mobile Background Size" type="string" default="auto"/>
+<Variable name="mobile.button.color" description="Mobile Button Color" type="color" default="#ffffff" />
+<Variable name="startSide" description="Side where text starts in blog language" type="automatic" default="left"/>
+<Variable name="endSide" description="Side where text ends in blog language" type="automatic" default="right"/>
+*/
+/* Content
+----------------------------------------------- */
+body {
+font: italic normal 14px Consolas;
+color: #444444;
+background: #ffffff none repeat scroll top left;
+padding: 0 0 0 0;
+}
+html body .region-inner {
+min-width: 0;
+max-width: 100%;
+width: auto;
+}
+h2 {
+font-size: 22px;
+}
+a:link {
+text-decoration:none;
+color: #2288bb;
+}
+a:visited {
+text-decoration:none;
+color: #888888;
+}
+a:hover {
+text-decoration:underline;
+color: #33aaff;
+}
+.body-fauxcolumn-outer .fauxcolumn-inner {
+background: transparent none repeat scroll top left;
+_background-image: none;
+}
+.body-fauxcolumn-outer .cap-top {
+position: absolute;
+z-index: 1;
+height: 400px;
+width: 100%;
+background: #ffffff none repeat scroll top left;
+}
+.body-fauxcolumn-outer .cap-top .cap-left {
+width: 100%;
+background: transparent none repeat-x scroll top left;
+_background-image: none;
+}
+.content-outer {
+-moz-box-shadow: 0 0 0 rgba(0, 0, 0, .15);
+-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .15);
+-goog-ms-box-shadow: 0 0 0 #333333;
+box-shadow: 0 0 0 rgba(0, 0, 0, .15);
+margin-bottom: 1px;
+}
+.content-inner {
+padding: 10px 40px;
+}
+.content-inner {
+background-color: #ffffff;
+}
+/* Header
+----------------------------------------------- */
+.header-outer {
+background: transparent none repeat-x scroll 0 -400px;
+_background-image: none;
+}
+.Header h1 {
+font: normal bold 60px Fontdiner Swanky;
+color: #073763;
+text-shadow: 0 0 0 rgba(0, 0, 0, .2);
+}
+.Header h1 a {
+color: #073763;
+}
+.Header .description {
+font-size: 18px;
+color: #000000;
+}
+.header-inner .Header .titlewrapper {
+padding: 22px 0;
+}
+.header-inner .Header .descriptionwrapper {
+padding: 0 0;
+}
+/* Tabs
+----------------------------------------------- */
+.tabs-inner .section:first-child {
+border-top: 0 solid #dddddd;
+}
+.tabs-inner .section:first-child ul {
+margin-top: -1px;
+border-top: 1px solid #dddddd;
+border-left: 1px solid #dddddd;
+border-right: 1px solid #dddddd;
+}
+.tabs-inner .widget ul {
+background: transparent none repeat-x scroll 0 -800px;
+_background-image: none;
+border-bottom: 1px solid #dddddd;
+margin-top: 0;
+margin-left: -30px;
+margin-right: -30px;
+}
+.tabs-inner .widget li a {
+display: inline-block;
+padding: .6em 1em;
+font: italic normal 14px Consolas;
+color: #000000;
+border-left: 1px solid #ffffff;
+border-right: 1px solid #dddddd;
+}
+.tabs-inner .widget li:first-child a {
+border-left: none;
+}
+.tabs-inner .widget li.selected a, .tabs-inner .widget li a:hover {
+color: #000000;
+background-color: #eeeeee;
+text-decoration: none;
+}
+/* Columns
+----------------------------------------------- */
+.main-outer {
+border-top: 0 solid transparent;
+}
+.fauxcolumn-left-outer .fauxcolumn-inner {
+border-right: 1px solid transparent;
+}
+.fauxcolumn-right-outer .fauxcolumn-inner {
+border-left: 1px solid transparent;
+}
+/* Headings
+----------------------------------------------- */
+div.widget > h2,
+div.widget h2.title {
+margin: 0 0 1em 0;
+font: normal bold 11px 'Trebuchet MS',Trebuchet,Verdana,sans-serif;
+color: #000000;
+}
+/* Widgets
+----------------------------------------------- */
+.widget .zippy {
+color: #999999;
+text-shadow: 2px 2px 1px rgba(0, 0, 0, .1);
+}
+.widget .popular-posts ul {
+list-style: none;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+font: normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+}
+.date-header span {
+background-color: #bbbbbb;
+color: #ffffff;
+padding: 0.4em;
+letter-spacing: 3px;
+margin: inherit;
+}
+.main-inner {
+padding-top: 35px;
+padding-bottom: 65px;
+}
+.main-inner .column-center-inner {
+padding: 0 0;
+}
+.main-inner .column-center-inner .section {
+margin: 0 1em;
+}
+.post {
+margin: 0 0 45px 0;
+}
+h3.post-title, .comments h4 {
+font: normal normal 22px 'Trebuchet MS',Trebuchet,Verdana,sans-serif;
+margin: .75em 0 0;
+}
+.post-body {
+font-size: 110%;
+line-height: 1.4;
+position: relative;
+}
+.post-body img, .post-body .tr-caption-container, .Profile img, .Image img,
+.BlogList .item-thumbnail img {
+padding: 2px;
+background: #ffffff;
+border: 1px solid #eeeeee;
+-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+}
+.post-body img, .post-body .tr-caption-container {
+padding: 5px;
+}
+.post-body .tr-caption-container {
+color: #444444;
+}
+.post-body .tr-caption-container img {
+padding: 0;
+background: transparent;
+border: none;
+-moz-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+}
+.post-header {
+margin: 0 0 1.5em;
+line-height: 1.6;
+font-size: 90%;
+}
+.post-footer {
+margin: 20px -2px 0;
+padding: 5px 10px;
+color: #666666;
+background-color: #eeeeee;
+border-bottom: 1px solid #eeeeee;
+line-height: 1.6;
+font-size: 90%;
+}
+#comments .comment-author {
+padding-top: 1.5em;
+border-top: 1px solid transparent;
+background-position: 0 1.5em;
+}
+#comments .comment-author:first-child {
+padding-top: 0;
+border-top: none;
+}
+.avatar-image-container {
+margin: .2em 0 0;
+}
+#comments .avatar-image-container img {
+border: 1px solid #eeeeee;
+}
+/* Comments
+----------------------------------------------- */
+.comments .comments-content .icon.blog-author {
+background-repeat: no-repeat;
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB9sLFwMeCjjhcOMAAAD+SURBVDjLtZSvTgNBEIe/WRRnm3U8RC1neQdsm1zSBIU9VVF1FkUguQQsD9ITmD7ECZIJSE4OZo9stoVjC/zc7ky+zH9hXwVwDpTAWWLrgS3QAe8AZgaAJI5zYAmc8r0G4AHYHQKVwII8PZrZFsBFkeRCABYiMh9BRUhnSkPTNCtVXYXURi1FpBDgArj8QU1eVXUzfnjv7yP7kwu1mYrkWlU33vs1QNu2qU8pwN0UpKoqokjWwCztrMuBhEhmh8bD5UDqur75asbcX0BGUB9/HAMB+r32hznJgXy2v0sGLBcyAJ1EK3LFcbo1s91JeLwAbwGYu7TP/3ZGfnXYPgAVNngtqatUNgAAAABJRU5ErkJggg==);
+}
+.comments .comments-content .loadmore a {
+border-top: 1px solid #999999;
+border-bottom: 1px solid #999999;
+}
+.comments .comment-thread.inline-thread {
+background-color: #eeeeee;
+}
+.comments .continue {
+border-top: 2px solid #999999;
+}
+/* Accents
+---------------------------------------------- */
+.section-columns td.columns-cell {
+border-left: 1px solid transparent;
+}
+.blog-pager {
+background: transparent url(//www.blogblog.com/1kt/simple/paging_dot.png) repeat-x scroll top center;
+}
+.blog-pager-older-link, .home-link,
+.blog-pager-newer-link {
+background-color: #ffffff;
+padding: 5px;
+}
+.footer-outer {
+border-top: 1px dashed #bbbbbb;
+}
+/* Mobile
+----------------------------------------------- */
+body.mobile  {
+background-size: auto;
+}
+.mobile .body-fauxcolumn-outer {
+background: transparent none repeat scroll top left;
+}
+.mobile .body-fauxcolumn-outer .cap-top {
+background-size: 100% auto;
+}
+.mobile .content-outer {
+-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+}
+.mobile .tabs-inner .widget ul {
+margin-left: 0;
+margin-right: 0;
+}
+.mobile .post {
+margin: 0;
+}
+.mobile .main-inner .column-center-inner .section {
+margin: 0;
+}
+.mobile .date-header span {
+padding: 0.1em 10px;
+margin: 0 -10px;
+}
+.mobile h3.post-title {
+margin: 0;
+}
+.mobile .blog-pager {
+background: transparent none no-repeat scroll top center;
+}
+.mobile .footer-outer {
+border-top: none;
+}
+.mobile .main-inner, .mobile .footer-inner {
+background-color: #ffffff;
+}
+.mobile-index-contents {
+color: #444444;
+}
+.mobile-link-button {
+background-color: #2288bb;
+}
+.mobile-link-button a:link, .mobile-link-button a:visited {
+color: #ffffff;
+}
+.mobile .tabs-inner .section:first-child {
+border-top: none;
+}
+.mobile .tabs-inner .PageList .widget-content {
+background-color: #eeeeee;
+color: #000000;
+border-top: 1px solid #dddddd;
+border-bottom: 1px solid #dddddd;
+}
+.mobile .tabs-inner .PageList .widget-content .pagelist-arrow {
+border-left: 1px solid #dddddd;
+}
+
+--></style>
+<style id="template-skin-1" type="text/css"><!--
+body {
+min-width: 1030px;
+}
+.content-outer, .content-fauxcolumn-outer, .region-inner {
+min-width: 1030px;
+max-width: 1030px;
+_width: 1030px;
+}
+.main-inner .columns {
+padding-left: 0;
+padding-right: 340px;
+}
+.main-inner .fauxcolumn-center-outer {
+left: 0;
+right: 340px;
+/* IE6 does not respect left and right together */
+_width: expression(this.parentNode.offsetWidth -
+parseInt("0") -
+parseInt("340px") + 'px');
+}
+.main-inner .fauxcolumn-left-outer {
+width: 0;
+}
+.main-inner .fauxcolumn-right-outer {
+width: 340px;
+}
+.main-inner .column-left-outer {
+width: 0;
+right: 100%;
+margin-left: -0;
+}
+.main-inner .column-right-outer {
+width: 340px;
+margin-right: -340px;
+}
+#layout {
+min-width: 0;
+}
+#layout .content-outer {
+min-width: 0;
+width: 800px;
+}
+#layout .region-inner {
+min-width: 0;
+width: auto;
+}
+--></style>
+<script type="text/javascript">var a="&m=1",d="(^|&)m=",e="?",f="?m=1";function g(){var b=window.location.href,c=b.split(e);switch(c.length){case 1:return b+f;case 2:return 0<=c[1].search(d)?null:b+a;default:return null}}var h=navigator.userAgent;if(-1!=h.indexOf("Mobile")&&-1!=h.indexOf("WebKit")&&-1==h.indexOf("iPad")||-1!=h.indexOf("Opera Mini")||-1!=h.indexOf("IEMobile")){var k=g();k&&window.location.replace(k)};
+</script><link rel="stylesheet" href="./Web Tech Basic_ How to install skeltrack on ubuntu 11.10_files/css" media="all"><script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('headEnd');
+</script></head>
+<body class=" variant-simplysimple">
+<div class="navbar section" id="navbar">
+</div>
+<div class="body-fauxcolumns">
+<div class="fauxcolumn-outer body-fauxcolumn-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</div>
+<div class="content">
+<div class="content-fauxcolumns">
+<div class="fauxcolumn-outer content-fauxcolumn-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</div>
+<div class="content-outer">
+<div class="content-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left content-fauxborder-left">
+<div class="fauxborder-right content-fauxborder-right"></div>
+<div class="content-inner">
+<header>
+<div class="header-outer">
+<div class="header-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left header-fauxborder-left">
+<div class="fauxborder-right header-fauxborder-right"></div>
+<div class="region-inner header-inner">
+<div class="header section" id="header"><div class="widget Header" id="Header1">
+<div id="header-inner">
+<div class="titlewrapper">
+<h1 class="title">
+<a href="http://webtecbasics.blogspot.jp/">Web Tech Basic</a>
+</h1>
+</div>
+<div class="descriptionwrapper">
+<p class="description"><span>Problem Solver For All Computer Quries Probbley For Windows And Internt.</span></p>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+<div class="header-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</header>
+<div class="tabs-outer">
+<div class="tabs-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left tabs-fauxborder-left">
+<div class="fauxborder-right tabs-fauxborder-right"></div>
+<div class="region-inner tabs-inner">
+<div class="tabs section" id="crosscol"><div class="widget HTML" id="HTML1">
+<div class="widget-content">
+<script async="" src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Automatic Size -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6134945805525509" data-ad-slot="8680647476" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=7146815791316761183&widgetType=HTML&widgetId=HTML1&action=editWidget&sectionId=crosscol" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;HTML1&quot;));" target="configHTML1" title="Edit">
+<img alt="" height="18" src="./Web Tech Basic_ How to install skeltrack on ubuntu 11.10_files/icon18_wrench_allbkg.png" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div></div>
+<div class="tabs section" id="crosscol-overflow"></div>
+</div>
+</div>
+<div class="tabs-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<div class="main-outer">
+<div class="main-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left main-fauxborder-left">
+<div class="fauxborder-right main-fauxborder-right"></div>
+<div class="region-inner main-inner">
+<div class="columns fauxcolumns">
+<div class="fauxcolumn-outer fauxcolumn-center-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<div class="fauxcolumn-outer fauxcolumn-left-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<div class="fauxcolumn-outer fauxcolumn-right-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<!-- corrects IE6 width calculation -->
+<div class="columns-inner">
+<div class="column-center-outer">
+<div class="column-center-inner">
+<div class="main section" id="main"><div class="widget Blog" id="Blog1">
+<div class="blog-posts hfeed">
+
+          <div class="date-outer">
+        
+<h2 class="date-header"><span>Thursday, 19 June 2014</span></h2>
+
+          <div class="date-posts">
+        
+<div class="post-outer">
+<div class="post hentry" itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
+<a name="2104366302166494675"></a>
+<h3 class="post-title entry-title" itemprop="name">
+How to install skeltrack on ubuntu 11.10
+</h3>
+<div class="post-header">
+<div class="post-header-line-1"></div>
+</div>
+<div class="post-body entry-content" id="post-body-2104366302166494675" itemprop="articleBody">
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<h2 style="text-align: left;">
+How to install skeltrack on ubuntu 11.10</h2>
+#need clutter 1.8 or greater<br>
+# make sure the glut-dev is there, I forget the package name<br>
+sudo apt-get install git-core cmake &nbsp;pkg-config build-essential libxmu-dev libxi-dev libusb-1.0-0-dev<br>
+git clone git://github.com/OpenKinect/libfreenect.git<br>
+cd libfreenect<br>
+mkdir build<br>
+cd build<br>
+cmake ..<br>
+make<br>
+sudo make install<br>
+sudo ldconfig /usr/local/lib64/<br>
+#sudo glview<br>
+cd ../.. #back to src<br>
+sudo aptitude install gobject-introspection gtk-doc-tools<br>
+<br>
+PKG_CONFIG_PATH=/usr/local/lib64/pkgconfig/:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig<br>
+export PKG_CONFIG_PATH<br>
+git clone git://gitorious.org/gfreenect/gfreenect.git<br>
+cd gfreenect<br>
+git clean -f<br>
+libtoolize -v --copy --install<br>
+aclocal<br>
+autoconf<br>
+./autogen.sh<br>
+make<br>
+sudo make install<br>
+sudo ldconfig /usr/local/lib/<br>
+cd ..<br>
+<br>
+sudo aptitude install libclutter-1.0-dev<br>
+export PKG_CONFIG_PATH<br>
+git clone https://github.com/joaquimrocha/Skeltrack.git<br>
+cd Skeltrack<br>
+git clean -f<br>
+libtoolize -v --copy --install<br>
+aclocal<br>
+autoconf<br>
+./autogen.sh<br>
+./configure --enable-examples=yes<br>
+make<br>
+sudo make install<br>
+cd examples<br>
+./test-kinect</div>
+<div style="clear: both;"></div>
+</div>
+<div class="post-footer">
+<div class="post-footer-line post-footer-line-1"><span class="post-author vcard">
+Posted by
+<span class="fn">
+<a href="https://plus.google.com/111001634198777565331" itemprop="author" rel="author" title="author profile">
+Nasrat Ali
+</a>
+</span>
+</span>
+<span class="post-timestamp">
+at
+<a class="timestamp-link" href="./Web Tech Basic_ How to install skeltrack on ubuntu 11.10_files/Web Tech Basic_ How to install skeltrack on ubuntu 11.10.html" itemprop="url" rel="bookmark" title="permanent link"><abbr class="published" itemprop="datePublished" title="2014-06-19T02:16:00-07:00">02:16</abbr></a>
+</span>
+<span class="post-comment-link">
+</span>
+<span class="post-icons">
+<span class="item-control blog-admin pid-461999817">
+<a href="https://www.blogger.com/post-edit.g?blogID=7146815791316761183&postID=2104366302166494675&from=pencil" title="Edit Post">
+<img alt="" class="icon-action" height="18" src="./Web Tech Basic_ How to install skeltrack on ubuntu 11.10_files/icon18_edit_allbkg.gif" width="18">
+</a>
+</span>
+</span>
+<div class="post-share-buttons goog-inline-block">
+<a class="goog-inline-block share-button sb-email" href="https://www.blogger.com/share-post.g?blogID=7146815791316761183&postID=2104366302166494675&target=email" target="_blank" title="Email This"><span class="share-button-link-text">Email This</span></a><a class="goog-inline-block share-button sb-blog" href="https://www.blogger.com/share-post.g?blogID=7146815791316761183&postID=2104366302166494675&target=blog" onclick="window.open(this.href, &quot;_blank&quot;, &quot;height=270,width=475&quot;); return false;" target="_blank" title="BlogThis!"><span class="share-button-link-text">BlogThis!</span></a><a class="goog-inline-block share-button sb-twitter" href="https://www.blogger.com/share-post.g?blogID=7146815791316761183&postID=2104366302166494675&target=twitter" target="_blank" title="Share to Twitter"><span class="share-button-link-text">Share to Twitter</span></a><a class="goog-inline-block share-button sb-facebook" href="https://www.blogger.com/share-post.g?blogID=7146815791316761183&postID=2104366302166494675&target=facebook" onclick="window.open(this.href, &quot;_blank&quot;, &quot;height=430,width=640&quot;); return false;" target="_blank" title="Share to Facebook"><span class="share-button-link-text">Share to Facebook</span></a><a class="goog-inline-block share-button sb-pinterest" href="https://www.blogger.com/share-post.g?blogID=7146815791316761183&postID=2104366302166494675&target=pinterest" target="_blank" title="Share to Pinterest"><span class="share-button-link-text">Share to Pinterest</span></a><div class="goog-inline-block google-plus-share-container"><div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 300px; height: 20px; background: transparent;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 300px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" width="100%" id="I0_1457098275384" name="I0_1457098275384" src="./Web Tech Basic_ How to install skeltrack on ubuntu 11.10_files/fastbutton.html" data-gapiattached="true" title="+1"></iframe></div></div>
+</div>
+</div>
+<div class="post-footer-line post-footer-line-2"><span class="post-labels">
+</span>
+</div>
+<div class="post-footer-line post-footer-line-3"><span class="post-location">
+</span>
+</div>
+</div>
+</div>
+<div class="comments" id="comments">
+<a name="comments"></a>
+<h4>No comments:</h4>
+<div id="Blog1_comments-block-wrapper">
+<dl class="avatar-comment-indent" id="comments-block">
+</dl>
+</div>
+<p class="comment-footer">
+</p><div class="comment-form">
+<a name="comment-form"></a>
+<h4 id="comment-post-message">Post a Comment</h4>
+<p>
+</p>
+<a href="https://www.blogger.com/comment-iframe.g?blogID=7146815791316761183&postID=2104366302166494675&blogspotRpcToken=9915459" id="comment-editor-src"></a>
+<iframe allowtransparency="true" class="blogger-iframe-colorize blogger-comment-from-post" frameborder="0" height="410px" id="comment-editor" name="comment-editor" src="./Web Tech Basic_ How to install skeltrack on ubuntu 11.10_files/comment-iframe.html" width="100%" data-resized="true"></iframe>
+<script type="text/javascript" src="./Web Tech Basic_ How to install skeltrack on ubuntu 11.10_files/2063468179-comment_from_post_iframe.js"></script>
+<script type="text/javascript">
+      BLOG_CMT_createIframe('https://www.blogger.com/rpc_relay.html');
+    </script>
+</div>
+<p></p>
+<div id="backlinks-container">
+<div id="Blog1_backlinks-container">
+</div>
+</div>
+</div>
+</div>
+<div class="inline-ad">
+<script type="text/javascript">
+    google_ad_client = "ca-pub-6134945805525509";
+    google_ad_host = "ca-host-pub-1556223355139109";
+    google_ad_host_channel = "L0007";
+    google_ad_slot = "6036293870";
+    google_ad_width = 300;
+    google_ad_height = 250;
+</script>
+<!-- webtecbasics_main_Blog1_300x250_as -->
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+
+        </div></div>
+      
+</div>
+<div class="blog-pager" id="blog-pager">
+<span id="blog-pager-newer-link">
+<a class="blog-pager-newer-link" href="http://webtecbasics.blogspot.jp/2016/01/how-to-install-skeltrack-on-ubuntu-1104.html" id="Blog1_blog-pager-newer-link" title="Newer Post">Newer Post</a>
+</span>
+<span id="blog-pager-older-link">
+<a class="blog-pager-older-link" href="http://webtecbasics.blogspot.jp/2014/06/how-to-install-grub-customizer-for.html" id="Blog1_blog-pager-older-link" title="Older Post">Older Post</a>
+</span>
+<a class="home-link" href="http://webtecbasics.blogspot.jp/">Home</a>
+</div>
+<div class="clear"></div>
+<div class="post-feeds">
+<div class="feed-links">
+Subscribe to:
+<a class="feed-link" href="http://webtecbasics.blogspot.com/feeds/2104366302166494675/comments/default" target="_blank" type="application/atom+xml">Post Comments (Atom)</a>
+</div>
+</div>
+<script type="text/javascript">window.___gcfg = {'lang': 'en_GB'};</script>
+</div></div>
+</div>
+</div>
+<div class="column-left-outer">
+<div class="column-left-inner">
+<aside>
+</aside>
+</div>
+</div>
+<div class="column-right-outer">
+<div class="column-right-inner">
+<aside>
+<div class="sidebar section" id="sidebar-right-1"><div class="widget AdSense" id="AdSense1">
+<div class="widget-content">
+<script async="" src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- webtecbasics_sidebar-right-1_AdSense1_1x1_as -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6134945805525509" data-ad-host="ca-host-pub-1556223355139109" data-ad-host-channel="L0001" data-ad-slot="7513027074" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=7146815791316761183&widgetType=AdSense&widgetId=AdSense1&action=editWidget&sectionId=sidebar-right-1" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;AdSense1&quot;));" target="configAdSense1" title="Edit">
+<img alt="" height="18" src="./Web Tech Basic_ How to install skeltrack on ubuntu 11.10_files/icon18_wrench_allbkg.png" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div><div class="widget PopularPosts" id="PopularPosts1">
+<h2>Popular Posts</h2>
+<div class="widget-content popular-posts">
+<ul>
+<li>
+<div class="item-content">
+<div class="item-title"><a href="http://webtecbasics.blogspot.jp/2014/06/how-to-install-mdk3-on-ubuntu.html">How To Install MDK3 on Ubuntu</a></div>
+<div class="item-snippet"> # Make sure that gcc is installed. In older Ubuntu, you need to install gcc-4.4.3. But in Ubuntu 10.04 LTS, gcc-4.4.3 is installed. To do t...</div>
+</div>
+<div style="clear: both;"></div>
+</li>
+<li>
+<div class="item-content">
+<div class="item-title"><a href="http://webtecbasics.blogspot.jp/2014/06/install-gamepanelx-master-on-ubuntu-1210.html">Install gamepanelx master on ubuntu 12.10</a></div>
+<div class="item-snippet">  Install gamepanelx master on ubuntu 12.10   First, install some stuff:  mysql server  apache server  make  unzip  ftp (if you like; i am n...</div>
+</div>
+<div style="clear: both;"></div>
+</li>
+<li>
+<div class="item-content">
+<div class="item-title"><a href="./Web Tech Basic_ How to install skeltrack on ubuntu 11.10_files/Web Tech Basic_ How to install skeltrack on ubuntu 11.10.html">How to install skeltrack on ubuntu 11.10</a></div>
+<div class="item-snippet">  How to install skeltrack on ubuntu 11.10  #need clutter 1.8 or greater  # make sure the glut-dev is there, I forget the package name  sudo...</div>
+</div>
+<div style="clear: both;"></div>
+</li>
+<li>
+<div class="item-content">
+<div class="item-title"><a href="http://webtecbasics.blogspot.jp/2012/05/motherboard-of-pc.html">The Motherboard of PC</a></div>
+<div class="item-snippet"> The motherboard is the most important component of computer. If we mean that the processor is the brain of the computer, the the motherboar...</div>
+</div>
+<div style="clear: both;"></div>
+</li>
+<li>
+<div class="item-content">
+<div class="item-title"><a href="http://webtecbasics.blogspot.jp/2012/04/no-sound-in-windows.html">No sound in Windows</a></div>
+<div class="item-snippet">   Introduction    This tutorial is designed to help you identify and fix common sound problems in&nbsp; Windows , including no sound coming from...</div>
+</div>
+<div style="clear: both;"></div>
+</li>
+<li>
+<div class="item-content">
+<div class="item-title"><a href="http://webtecbasics.blogspot.jp/2012/08/how-do-i-clear-my-internet-browser.html">How do I clear my Internet browser history?</a></div>
+<div class="item-snippet">   Question   How do I clear my Internet browser history?   Answers   As you browse the&nbsp; Internet , each of the items you view are saved loc...</div>
+</div>
+<div style="clear: both;"></div>
+</li>
+<li>
+<div class="item-content">
+<div class="item-title"><a href="http://webtecbasics.blogspot.jp/2014/06/script-to-install-mailcatcher-on.html">Script to install mailcatcher on Debian/Ubuntu without RVM</a></div>
+<div class="item-snippet"> #!/bin/sh   # Script to install mailcatcher on Debian/Ubuntu without RVM    # install Ruby and rubygems without RVM:  sudo apt-get install ...</div>
+</div>
+<div style="clear: both;"></div>
+</li>
+<li>
+<div class="item-content">
+<div class="item-title"><a href="http://webtecbasics.blogspot.jp/2012/07/effectual-web-traffic-generation.html">Effectual Web Traffic Generation Techniques</a></div>
+<div class="item-snippet"> And thus if you are clearly earning money on the internet as a freelancer, seller, web content writer, affiliate marketer or a blogger, you...</div>
+</div>
+<div style="clear: both;"></div>
+</li>
+<li>
+<div class="item-content">
+<div class="item-title"><a href="http://webtecbasics.blogspot.jp/2012/04/wired-and-wireless-network-connection.html">Wired and wireless network connection problems in Windows</a></div>
+<div class="item-snippet">   Introduction    This tutorial is designed to help you identify and fix problems with wired (Ethernet) and wireless (Wi-Fi) network connec...</div>
+</div>
+<div style="clear: both;"></div>
+</li>
+<li>
+<div class="item-content">
+<div class="item-title"><a href="http://webtecbasics.blogspot.jp/2012/04/keyboard-shortcuts-for-working-with_9858.html">keyboard shortcuts for working with the Help viewer.</a></div>
+<div class="item-snippet">    The following table contains keyboard shortcuts for working with the Help viewer.    Press this key To do this    Alt+C   Display the Ta...</div>
+</div>
+<div style="clear: both;"></div>
+</li>
+</ul>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=7146815791316761183&widgetType=PopularPosts&widgetId=PopularPosts1&action=editWidget&sectionId=sidebar-right-1" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;PopularPosts1&quot;));" target="configPopularPosts1" title="Edit">
+<img alt="" height="18" src="./Web Tech Basic_ How to install skeltrack on ubuntu 11.10_files/icon18_wrench_allbkg.png" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div><div class="widget Label" id="Label1">
+<h2>Labels</h2>
+<div class="widget-content cloud-label-widget-content">
+<span class="label-size label-size-1">
+<a dir="ltr" href="http://webtecbasics.blogspot.jp/search/label/10.10">10.10</a>
+</span>
+<span class="label-size label-size-3">
+<a dir="ltr" href="http://webtecbasics.blogspot.jp/search/label/12.10">12.10</a>
+</span>
+<span class="label-size label-size-1">
+<a dir="ltr" href="http://webtecbasics.blogspot.jp/search/label/3G%20Dongle">3G Dongle</a>
+</span>
+<span class="label-size label-size-2">
+<a dir="ltr" href="http://webtecbasics.blogspot.jp/search/label/Auto">Auto</a>
+</span>
+<span class="label-size label-size-3">
+<a dir="ltr" href="http://webtecbasics.blogspot.jp/search/label/Blogging%20Tips">Blogging Tips</a>
+</span>
+<span class="label-size label-size-1">
+<a dir="ltr" href="http://webtecbasics.blogspot.jp/search/label/Debian">Debian</a>
+</span>
+<span class="label-size label-size-1">
+<a dir="ltr" href="http://webtecbasics.blogspot.jp/search/label/Driver">Driver</a>
+</span>
+<span class="label-size label-size-4">
+<a dir="ltr" href="http://webtecbasics.blogspot.jp/search/label/How%20To">How To</a>
+</span>
+<span class="label-size label-size-1">
+<a dir="ltr" href="http://webtecbasics.blogspot.jp/search/label/Ideapad">Ideapad</a>
+</span>
+<span class="label-size label-size-5">
+<a dir="ltr" href="http://webtecbasics.blogspot.jp/search/label/Install">Install</a>
+</span>
+<span class="label-size label-size-1">
+<a dir="ltr" href="http://webtecbasics.blogspot.jp/search/label/Lenovo">Lenovo</a>
+</span>
+<span class="label-size label-size-3">
+<a dir="ltr" href="http://webtecbasics.blogspot.jp/search/label/Linux">Linux</a>
+</span>
+<span class="label-size label-size-1">
+<a dir="ltr" href="http://webtecbasics.blogspot.jp/search/label/Meta%20tags">Meta tags</a>
+</span>
+<span class="label-size label-size-1">
+<a dir="ltr" href="http://webtecbasics.blogspot.jp/search/label/Player">Player</a>
+</span>
+<span class="label-size label-size-1">
+<a dir="ltr" href="http://webtecbasics.blogspot.jp/search/label/Plex%20Media">Plex Media</a>
+</span>
+<span class="label-size label-size-1">
+<a dir="ltr" href="http://webtecbasics.blogspot.jp/search/label/RVM">RVM</a>
+</span>
+<span class="label-size label-size-1">
+<a dir="ltr" href="http://webtecbasics.blogspot.jp/search/label/Script">Script</a>
+</span>
+<span class="label-size label-size-5">
+<a dir="ltr" href="http://webtecbasics.blogspot.jp/search/label/SEO">SEO</a>
+</span>
+<span class="label-size label-size-1">
+<a dir="ltr" href="http://webtecbasics.blogspot.jp/search/label/Server">Server</a>
+</span>
+<span class="label-size label-size-1">
+<a dir="ltr" href="http://webtecbasics.blogspot.jp/search/label/Tata%20Docomo">Tata Docomo</a>
+</span>
+<span class="label-size label-size-1">
+<a dir="ltr" href="http://webtecbasics.blogspot.jp/search/label/Tools">Tools</a>
+</span>
+<span class="label-size label-size-5">
+<a dir="ltr" href="http://webtecbasics.blogspot.jp/search/label/Ubuntu">Ubuntu</a>
+</span>
+<span class="label-size label-size-4">
+<a dir="ltr" href="http://webtecbasics.blogspot.jp/search/label/Web%20Traffic">Web Traffic</a>
+</span>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=7146815791316761183&widgetType=Label&widgetId=Label1&action=editWidget&sectionId=sidebar-right-1" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;Label1&quot;));" target="configLabel1" title="Edit">
+<img alt="" height="18" src="./Web Tech Basic_ How to install skeltrack on ubuntu 11.10_files/icon18_wrench_allbkg.png" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div><div class="widget HTML" id="HTML3">
+<div class="widget-content">
+<script async="" src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Automatic Size -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6134945805525509" data-ad-slot="8680647476" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=7146815791316761183&widgetType=HTML&widgetId=HTML3&action=editWidget&sectionId=sidebar-right-1" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;HTML3&quot;));" target="configHTML3" title="Edit">
+<img alt="" height="18" src="./Web Tech Basic_ How to install skeltrack on ubuntu 11.10_files/icon18_wrench_allbkg.png" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div></div>
+<table border="0" cellpadding="0" cellspacing="0" class="section-columns columns-2">
+<tbody>
+<tr>
+<td class="first columns-cell">
+<div class="sidebar section" id="sidebar-right-2-1"></div>
+</td>
+<td class="columns-cell">
+<div class="sidebar section" id="sidebar-right-2-2"></div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="sidebar section" id="sidebar-right-3"></div>
+</aside>
+</div>
+</div>
+</div>
+<div style="clear: both"></div>
+<!-- columns -->
+</div>
+<!-- main -->
+</div>
+</div>
+<div class="main-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<footer>
+<div class="footer-outer">
+<div class="footer-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left footer-fauxborder-left">
+<div class="fauxborder-right footer-fauxborder-right"></div>
+<div class="region-inner footer-inner">
+<div class="foot section" id="footer-1"><div class="widget HTML" id="HTML2">
+<div class="widget-content">
+<script async="" src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Automatic Size -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6134945805525509" data-ad-slot="8680647476" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=7146815791316761183&widgetType=HTML&widgetId=HTML2&action=editWidget&sectionId=footer-1" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;HTML2&quot;));" target="configHTML2" title="Edit">
+<img alt="" height="18" src="./Web Tech Basic_ How to install skeltrack on ubuntu 11.10_files/icon18_wrench_allbkg.png" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div></div>
+<table border="0" cellpadding="0" cellspacing="0" class="section-columns columns-3">
+<tbody>
+<tr>
+<td class="first columns-cell">
+<div class="foot section" id="footer-2-1"></div>
+</td>
+<td class="columns-cell">
+<div class="foot section" id="footer-2-2"></div>
+</td>
+<td class="columns-cell">
+<div class="foot section" id="footer-2-3"></div>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- outside of the include in order to lock Attribution widget -->
+<div class="foot section" id="footer-3"><div class="widget Attribution" id="Attribution1">
+<div class="widget-content" style="text-align: center;">
+Naim Hashmi Blog. Simple template. Powered by <a href="https://www.blogger.com/" target="_blank">Blogger</a>.
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=7146815791316761183&widgetType=Attribution&widgetId=Attribution1&action=editWidget&sectionId=footer-3" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;Attribution1&quot;));" target="configAttribution1" title="Edit">
+<img alt="" height="18" src="./Web Tech Basic_ How to install skeltrack on ubuntu 11.10_files/icon18_wrench_allbkg.png" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div></div>
+</div>
+</div>
+<div class="footer-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</footer>
+<!-- content -->
+</div>
+</div>
+<div class="content-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+    window.setTimeout(function() {
+        document.body.className = document.body.className.replace('loading', '');
+      }, 10);
+  </script>
+<script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('widgetJsBefore');
+</script><script type="text/javascript" src="./Web Tech Basic_ How to install skeltrack on ubuntu 11.10_files/3731899860-widgets.js"></script>
+<script type="text/javascript" src="./Web Tech Basic_ How to install skeltrack on ubuntu 11.10_files/plusone.js" gapi_processed="true"></script>
+<script type="text/javascript">
+if (typeof(BLOG_attachCsiOnload) != 'undefined' && BLOG_attachCsiOnload != null) { window['blogger_templates_experiment_id'] = "templatesV2";window['blogger_blog_id'] = '7146815791316761183';BLOG_attachCsiOnload('item_'); }_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d7146815791316761183','//webtecbasics.blogspot.jp/2014/06/how-to-install-skeltrack-on-ubuntu-1110.html','7146815791316761183');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '7146815791316761183', 'bloggerUrl': 'https://www.blogger.com', 'title': 'Web Tech Basic', 'pageType': 'item', 'postId': '2104366302166494675', 'url': 'http://webtecbasics.blogspot.jp/2014/06/how-to-install-skeltrack-on-ubuntu-1110.html', 'canonicalUrl': 'http://webtecbasics.blogspot.com/2014/06/how-to-install-skeltrack-on-ubuntu-1110.html', 'homepageUrl': 'http://webtecbasics.blogspot.jp/', 'canonicalHomepageUrl': 'http://webtecbasics.blogspot.com/', 'blogspotFaviconUrl': 'http://webtecbasics.blogspot.jp/favicon.ico', 'enabledCommentProfileImages': true, 'adultContent': false, 'analyticsAccountNumber': '', 'useUniversalAnalytics': false, 'pageName': 'How to install skeltrack on ubuntu 11.10', 'pageTitle': 'Web Tech Basic: How to install skeltrack on ubuntu 11.10', 'metaDescription': 'How to install skeltrack on ubuntu 11.10', 'encoding': 'UTF-8', 'locale': 'en_GB', 'localeUnderscoreDelimited': 'en_gb', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'languageDirection': 'ltr', 'feedLinks': '\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42Web Tech Basic - Atom\42 href\75\42http://webtecbasics.blogspot.com/feeds/posts/default\42 /\76\n\74link rel\75\42alternate\42 type\75\42application/rss+xml\42 title\75\42Web Tech Basic - RSS\42 href\75\42http://webtecbasics.blogspot.com/feeds/posts/default?alt\75rss\42 /\76\n\74link rel\75\42service.post\42 type\75\42application/atom+xml\42 title\75\42Web Tech Basic - Atom\42 href\75\42https://www.blogger.com/feeds/7146815791316761183/posts/default\42 /\76\n\n\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42Web Tech Basic - Atom\42 href\75\42http://webtecbasics.blogspot.com/feeds/2104366302166494675/comments/default\42 /\76\n', 'meTag': '', 'openIdOpTag': '', 'latencyHeadScript': '\74script type\75\42text/javascript\42\76(function() { (function(){function c(a){this.t\75{};this.tick\75function(a,c,b){var d\75void 0!\75b?b:(new Date).getTime();this.t[a]\75[d,c];if(void 0\75\75b)try{window.console.timeStamp(\42CSI/\42+a)}catch(e){}};this.tick(\42start\42,null,a)}var a;window.performance\46\46(a\75window.performance.timing);var h\75a?new c(a.responseStart):new c;window.jstiming\75{Timer:c,load:h};if(a){var b\75a.navigationStart,e\75a.responseStart;0\74b\46\46e\76\75b\46\46(window.jstiming.srt\75e-b)}if(a){var d\75window.jstiming.load;0\74b\46\46e\76\75b\46\46(d.tick(\42_wtsrt\42,void 0,b),d.tick(\42wtsrt_\42,\n\42_wtsrt\42,e),d.tick(\42tbsd_\42,\42wtsrt_\42))}try{a\75null,window.chrome\46\46window.chrome.csi\46\46(a\75Math.floor(window.chrome.csi().pageT),d\46\0460\74b\46\46(d.tick(\42_tbnd\42,void 0,window.chrome.csi().startE),d.tick(\42tbnd_\42,\42_tbnd\42,b))),null\75\75a\46\46window.gtbExternal\46\46(a\75window.gtbExternal.pageT()),null\75\75a\46\46window.external\46\46(a\75window.external.pageT,d\46\0460\74b\46\46(d.tick(\42_tbnd\42,void 0,window.external.startE),d.tick(\42tbnd_\42,\42_tbnd\42,b))),a\46\46(window.jstiming.pt\75a)}catch(k){}})();window.tickAboveFold\75function(c){var a\0750;if(c.offsetParent){do a+\75c.offsetTop;while(c\75c.offsetParent)}c\75a;750\76\75c\46\46window.jstiming.load.tick(\42aft\42)};var f\75!1;function g(){f||(f\75!0,window.jstiming.load.tick(\42firstScrollTime\42))}window.addEventListener?window.addEventListener(\42scroll\42,g,!1):window.attachEvent(\42onscroll\42,g);\n })();\74/script\076', 'mobileHeadScript': '', 'adsenseClientId': 'pub-8501940855682805', 'ieCssRetrofitLinks': '\74!--[if IE]\76\74script type\75\42text/javascript\42 src\75\42https://www.blogger.com/static/v1/jsbin/1944632664-ieretrofit.js\42\76\74/script\76\n\74![endif]--\076', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/b8b1db2edc023ff5', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'sf': 'n', 'tf': ''}}, {'name': 'messages', 'data': {'adsGoHere': 'Ads go here', 'archive': 'Archive', 'blogArchive': 'Blog Archive', 'by': 'By', 'byAuthor': 'By %1', 'byAuthorLink': 'By \74a href\75\42%2\42\76%1\74/a\076', 'deleteBacklink': 'Delete Backlink', 'deleteComment': 'Delete Comment', 'edit': 'Edit', 'emailAddress': 'Email Address', 'getEmailNotifications': 'Get email notifications', 'keepReading': 'Keep reading', 'labels': 'Labels', 'loadMorePosts': 'Load more posts', 'loading': 'Loading...', 'myBlogList': 'My Blog List', 'myFavoriteSites': 'My favourite sites', 'newer': 'Newer', 'newerPosts': 'Newer Posts', 'newest': 'Newest', 'noResultsFound': 'No results found', 'noTitle': 'No title', 'numberOfComments': '{numComments,plural, \0750{No comments}\0751{1 comment}other{# comments}}', 'older': 'Older', 'olderPosts': 'Older Posts', 'oldest': 'Oldest', 'onlyTeamMembersCanComment': 'Note: only a member of this blog may post a comment.', 'popularPosts': 'Popular Posts', 'popularPostsFromThisBlog': 'Popular posts from this blog', 'postAComment': 'Post a Comment', 'postedBy': 'Posted by', 'postedByAuthor': 'Posted by %1', 'postedByAuthorLink': 'Posted by \74a href\75\42%2\42\76%1\74/a\076', 'readMore': 'Read more', 'reportAbuse': 'Report Abuse', 'search': 'Search', 'searchBlog': 'Search blog', 'share': 'Share', 'showAll': 'Show All', 'someOfMyFavoriteSites': 'Some of my favourite sites', 'subscribe': 'Subscribe', 'subscribeToThisBlog': 'Subscribe to this blog', 'theresNothingHere': 'There\47s nothing here.', 'viewAll': 'View all', 'visitProfile': 'Visit profile', 'widgetNotAvailableInPreview': 'This content is not available in blog preview.', 'widgetNotAvailableOnHttps': 'This content isn\47t available over encrypted connections yet.'}}, {'name': 'skin', 'data': {'vars': {'post_footer_background_color': '#eeeeee', 'tabs_text_color': '#000000', 'date_header_letterspacing': '3px', 'content_shadow_spread': '0', 'body_background_override': '', 'body_background': '#ffffff none repeat scroll top left', 'description_text_size': '18px', 'mobile_background_size': 'auto', 'header_shadow_spread': '0', 'image_border_color': '#eeeeee', 'date_header_color': '#ffffff', 'header_shadow_offset_top': '0', 'header_border_horizontalsize': '1px', 'widget_title_font': 'normal bold 11px \47Trebuchet MS\47,Trebuchet,Verdana,sans-serif', 'tabs_border_color': '#dddddd', 'tabs_bevel_border_width': '1px', 'body_background_gradient_tile': 'none', 'description_text_color': '#000000', 'main_section_margin': '1em', 'post_title_font': 'normal normal 22px \47Trebuchet MS\47,Trebuchet,Verdana,sans-serif', 'page_width': 'auto', 'paging_background': 'transparent url(//www.blogblog.com/1kt/simple/paging_dot.png) repeat-x scroll top center', 'body_text_color': '#444444', 'content_padding': '10px', 'header_background_gradient': 'none', 'post_margin_bottom': '45px', 'header_shadow_offset_left': '0', 'tabs_background_color': 'transparent', 'content_background_color': '#ffffff', 'body_background_gradient_cap': 'none', 'main_padding_top': '35px', 'widget_alternate_text_color': '#999999', 'image_text_color': '#444444', 'link_visited_color': '#888888', 'tabs_margin_side': '30px', 'image_border_large_size': '5px', 'content_shadow_spread_webkit': '0', 'mobile_button_color': '#ffffff', 'tabs_selected_text_color': '#000000', 'main_border_width': '0', 'content_background_color_selector': '.content-inner', 'link_color': '#2288bb', 'post_footer_border_color': '#eeeeee', 'date_header_font': 'normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif', 'tabs_background_gradient': 'none', 'content_padding_horizontal': '40px', 'header_font': 'normal bold 60px Fontdiner Swanky', 'startSide': 'left', 'tabs_font': 'italic normal 14px Consolas', 'widget_title_text_color': '#000000', 'header_border_size': '1px', 'tabs_selected_background_color': '#eeeeee', 'date_header_margin': 'inherit', 'footer_bevel': '1px', 'image_border_small_size': '2px', 'content_shadow_spread_ie': '0', 'mobile_background_overlay': 'transparent none repeat scroll top left', 'endSide': 'right', 'date_header_padding': '0.4em', 'image_background_color': '#ffffff', 'body_rule_color': 'transparent', 'header_bottom_border_size': '0', 'page_width_selector': '.region-inner', 'body_background_color': '#ffffff', 'header_text_color': '#073763', 'main_padding': '0', 'date_header_background_color': '#bbbbbb', 'tabs_border_width': '1px', 'body_font': 'italic normal 14px Consolas', 'link_hover_color': '#33aaff', 'header_background_color': 'transparent', 'keycolor': '#ffffff', 'main_padding_bottom': '65px', 'post_footer_text_color': '#666666', 'tabs_margin_top': '0', 'header_padding': '0'}, 'override': ''}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\75classic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\75flipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\75magazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\75mosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\75sidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\75snapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\75timeslide'}}}]);
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', null, document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'crosscol', null, document.getElementById('HTML1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', null, document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/1400614585-lbx__en_gb.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/306752634-lightbox_bundle.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_AdSenseView', new _WidgetInfo('AdSense1', 'sidebar-right-1', null, document.getElementById('AdSense1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PopularPostsView', new _WidgetInfo('PopularPosts1', 'sidebar-right-1', null, document.getElementById('PopularPosts1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LabelView', new _WidgetInfo('Label1', 'sidebar-right-1', null, document.getElementById('Label1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML3', 'sidebar-right-1', null, document.getElementById('HTML3'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML2', 'footer-1', null, document.getElementById('HTML2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_AttributionView', new _WidgetInfo('Attribution1', 'footer-3', null, document.getElementById('Attribution1'), {'attribution': 'Naim Hashmi Blog. Simple template. Powered by \74a href\75\47https://www.blogger.com\47 target\75\47_blank\47\76Blogger\74/a\76.'}, 'displayModeFull'));
+</script>
+
+<iframe name="oauth2relay423537303" id="oauth2relay423537303" src="./Web Tech Basic_ How to install skeltrack on ubuntu 11.10_files/postmessageRelay.html" tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe></body></html>
